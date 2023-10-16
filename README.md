@@ -1,4 +1,10 @@
-# Projet Elixir - Exercices
+# WORKSHOP Elixir
+
+## Introduction
+
+Elixir est un langage de programmation fonctionnel, concurrent, orienté objet. Il a été créé par José Valim en 2011 et est utilisé par des sociétés telles que Pinterest, Moz, Discord, Bleacher Report, The Outline, Inverse et plus encore.
+
+Pour en savoir plus sur Elixir, consultez le site officiel d'Elixir : https://elixir-lang.org/
 
 ## Installation d'Elixir
 
@@ -14,6 +20,16 @@ Après l'installation, vérifiez si Elixir est correctement installé en exécut
 elixir --version
 ```
 
+Pour installer Elixir sur d'autres systèmes d'exploitation, consultez la page d'installation officielle d'Elixir : https://elixir-lang.org/install.html
+
+## Sommaire
+
+Durant ce workshop, nous allons faire une serie d'exercice simple pour apprendre les bases du langage Elixir.
+
+Ensuite, nous allons faire un projet simple pour mettre en pratique ce que nous avons appris.
+
+# Step 1 : Les bases
+
 ## Lancer un Script Elixir
 
 Pour exécuter un script Elixir, utilisez la commande elixir suivie du nom du fichier .ex. Par exemple :
@@ -24,23 +40,25 @@ elixir <lefichier.ex>
 
 ## exercice 1: HELLO WORLD?
 
-print hello world.
+affiche un hello world.
 
 ## exercice 2: DES MATH?
 
-Écrivez une fonction sum_of_digits/1 qui prend un nombre entier positif en entrée et renvoie la somme de ses chiffres.
+Écrivez une fonction `sum_of_digits` qui prend un nombre entier positif en entrée et renvoie la somme de ses chiffres.
 
 Exemple d'utilisation:
+
 ```
-IO.puts MathFunctions.sum_of_digits(123)
+IO.puts("La somme des chiffres de 123 est #{MathFunctions.sum_of_digits(123)}")
 #6
 ```
 
 ## exercice 3: Qui est le plus grand ???
 
-Écrivez une fonction max_number/1 qui prend une liste de nombres en entrée et renvoie le nombre le plus élevé.
+Écrivez une fonction `max_number` qui prend une liste de nombres en entrée et renvoie le nombre le plus élevé.
 
 Exemple d'utilisation:
+
 ```
 numbers = [12, 45, 7, 98, 23, 56, 89]
 IO.puts("Le plus grand nombre est #{ListFunctions.max_number(numbers)}")
@@ -49,9 +67,10 @@ IO.puts("Le plus grand nombre est #{ListFunctions.max_number(numbers)}")
 
 ## exercice 4: Palinquoi?
 
-Écrivez une fonction is_palindrome/1 qui prend une chaîne de caractères en entrée et renvoie true si elle est un palindrome, sinon false.
+Écrivez une fonction `is_palindrome` qui prend une chaîne de caractères en entrée et renvoie true si elle est un palindrome, sinon false.
 
 Exemple d'utilisation:
+
 ```
 input_string = "A man, a plan, a canal, Panama"
 if StringFunctions.is_palindrome(input_string) do
@@ -72,17 +91,4 @@ end
 
 ## exercice 5: Manipulation de List.
 
-Écrivez une fonction even_numbers/1 qui prend en entrée une liste d'entiers et renvoie une nouvelle liste contenant uniquement les nombres pairs de la liste d'entrée.
-
-Main pour tester:
-```
-defmodule Main do
-  def run do
-    list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    even_numbers = MathFunctions.even_numbers(list)
-    IO.puts("Nombres pairs : #{inspect(even_numbers)}")
-  end
-end
-  
-Main.run()
-```
+Nous allons maintenant apprendre à manipuler les listes en Elixir.
