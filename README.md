@@ -46,3 +46,43 @@ numbers = [12, 45, 7, 98, 23, 56, 89]
 IO.puts("Le plus grand nombre est #{ListFunctions.max_number(numbers)}")
 #98
 ```
+
+## exercice 4: Palinquoi?
+
+Écrivez une fonction is_palindrome/1 qui prend une chaîne de caractères en entrée et renvoie true si elle est un palindrome, sinon false.
+
+Exemple d'utilisation:
+```
+input_string = "A man, a plan, a canal, Panama"
+if StringFunctions.is_palindrome(input_string) do
+  IO.puts("La chaîne est un palindrome.")
+else
+  IO.puts("La chaîne n'est pas un palindrome.")
+end
+#Palindrome
+
+input_string = "Elixir is fun"
+if StringFunctions.is_palindrome(input_string) do
+  IO.puts("La chaîne est un palindrome.")
+else
+  IO.puts("La chaîne n'est pas un palindrome.")
+end
+#pas Palindrome
+```
+
+## exercice 5: Manipulation de List.
+
+Écrivez une fonction even_numbers/1 qui prend en entrée une liste d'entiers et renvoie une nouvelle liste contenant uniquement les nombres pairs de la liste d'entrée.
+
+Main pour tester:
+```
+defmodule Main do
+  def run do
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    even_numbers = MathFunctions.even_numbers(list)
+    IO.puts("Nombres pairs : #{inspect(even_numbers)}")
+  end
+end
+  
+Main.run()
+```
