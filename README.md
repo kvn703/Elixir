@@ -92,3 +92,39 @@ end
 ## exercice 5: Manipulation de List.
 
 Nous allons maintenant apprendre à manipuler les listes en Elixir.
+
+### 5.1: Manipulation de List.
+
+Écrivez une fonction `even_numbers` qui prend en entrée une liste d'entiers et renvoie une nouvelle liste contenant uniquement les nombres pairs de la liste d'entrée.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    even_numbers = MathFunctions.even_numbers(list)
+    IO.puts("Nombres pairs : #{inspect(even_numbers)}")
+  end
+end
+
+Main.run()
+```
+
+### 5.2: Manipulation de List.
+
+Écrivez une fonction `sum_of_list` qui prend en entrée une liste d'entiers et renvoie la somme de tous les nombres de la liste.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    sum = MathFunctions.sum_of_list(list)
+    IO.puts("Somme de la liste : #{sum}")
+  end
+end
+
+Main.run()
+```
