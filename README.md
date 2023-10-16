@@ -271,3 +271,28 @@ Main.run()
 
 Écrivez une fonction `read_file_to_list` qui prend en entrée le nom d'un fichier et renvoie son contenu sous forme de liste. Et ensuite avec la fonction `sort_list` triez la liste et écrivez le contenu dans un nouveau fichier `sorted.txt`.
 
+# Step 2 : Petit projet
+
+Après avoir appris les bases du langage Elixir, nous allons maintenant faire un petit projet pour mettre en pratique ce que nous avons appris.
+
+### But du projet
+
+Le but de ce projet est de créer un programme qui permet de gérer une liste de tâches.
+
+### Fonctionnalités
+
+- Ajouter une tâche
+
+- Supprimer une tâche
+
+- Afficher la liste des tâches
+
+- Sauvegarder la liste des tâches dans un fichier
+
+- Charger la liste des tâches depuis un fichier
+
+Aucune interface graphique n'est nécessaire, le programme peut être exécuté en ligne de commande.
+
+Je vous invite fortement à utiliser les fonctions que vous avez créés dans les exercices précédents.
+
+A vous de jouer !
