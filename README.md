@@ -21,3 +21,7 @@ Pour exécuter un script Elixir, utilisez la commande elixir suivie du nom du fi
 ```bash
 elixir <lefichier.ex>
 ```
+
+## exercice 1: HELLO WORLD?
+
+affiche un hello world.
