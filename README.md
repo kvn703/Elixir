@@ -232,3 +232,42 @@ Main.run()
 Nous allons maintenant apprendre à manipuler les fichiers en Elixir.
 
 Pour cette partie, veuillez créer un fichier `sample.txt` pour faire vos tests.
+
+### 7.1: Lire le fichier.
+
+Écrivez une fonction `read_file` qui prend en entrée le nom d'un fichier et renvoie son contenu.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    content = FileFunctions.read_file("sample.txt")
+    IO.puts("Contenu : #{content}")
+  end
+end
+
+Main.run()
+```
+
+### 7.2: Ecrire dans le fichier.
+
+Écrivez une fonction `write_file` qui prend en entrée le nom d'un fichier et son contenu et écrit le contenu dans le fichier.
+
+Main pour tester:
+
+```
+
+defmodule Main do
+  def run do
+    FileFunctions.write_file("sample.txt", "Hello World!")
+  end
+end
+
+Main.run()
+```
+
+### 7.3: Stocker le contenu du fichier dans une liste.
+
+Écrivez une fonction `read_file_to_list` qui prend en entrée le nom d'un fichier et renvoie son contenu sous forme de liste. Et ensuite avec la fonction `sort_list` triez la liste et écrivez le contenu dans un nouveau fichier `sorted.txt`.
+
