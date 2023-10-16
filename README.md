@@ -208,3 +208,27 @@ end
 
 Main.run()
 ```
+
+### 6.3: Manipulation de Map.
+
+Écrivez une fonction `get_keys` qui prend en entrée une map et renvoie une liste contenant toutes les clés de la map.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    map = %{"a" => 1, "b" => 2, "c" => 3}
+    keys = MapFunctions.get_keys(map)
+    IO.puts("Clés : #{inspect(keys)}")
+  end
+end
+
+Main.run()
+```
+
+## exercice 7 : Manipulation de fichier.
+
+Nous allons maintenant apprendre à manipuler les fichiers en Elixir.
+
+Pour cette partie, veuillez créer un fichier `sample.txt` pour faire vos tests.
