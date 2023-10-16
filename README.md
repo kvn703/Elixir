@@ -183,3 +183,28 @@ end
 Main.run()
 ```
 
+## exercice 6: Manipulation de Map.
+
+Nous allons maintenant apprendre à manipuler les maps en Elixir.
+
+### 6.1: Creation de Map.
+
+Écrivez une fonction create_map qui prend en entrée une liste d'entiers et renvoie une nouvelle map contenant des champs nom, prénom, âge et l'id.
+
+### 6.2: Manipulation de Map.
+
+Écrivez une fonction get_value qui prend en entrée une map et une clé et renvoie la valeur correspondante.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    map = %{"a" => 1, "b" => 2, "c" => 3}
+    value = MapFunctions.get_value(map, "b")
+    IO.puts("Valeur : #{value}")
+  end
+end
+
+Main.run()
+```
