@@ -128,3 +128,58 @@ end
 
 Main.run()
 ```
+
+### 5.3: Manipulation de List.
+
+Écrivez une fonction `unique_elements` qui prend en entrée une liste d'entiers et renvoie une nouvelle liste contenant uniquement les éléments uniques de la liste d'entrée.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+    unique_elements = MathFunctions.unique_elements(list)
+    IO.puts("Éléments uniques : #{inspect(unique_elements)}")
+  end
+end
+
+Main.run()
+```
+
+### 5.4: Manipulation de List.
+
+Écrivez une fonction `string_to_list` qui prend en entrée une chaîne de caractères et renvoie une liste contenant tous les caractères de la chaîne.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    string = "Hello World!"
+    list = StringFunctions.string_to_list(string)
+    IO.puts("Liste : #{inspect(list)}")
+  end
+end
+
+Main.run()
+```
+
+### 5.5: Manipulation de List.
+
+Écrivez une fonction `sort_list` qui prend en entrée une liste d'entiers et renvoie une nouvelle liste contenant les éléments de la liste d'entrée triés par ordre croissant.
+
+Main pour tester:
+
+```
+defmodule Main do
+  def run do
+    list = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+    sorted_list = ListFunctions.sort_list(list)
+    IO.puts("Liste triée : #{inspect(sorted_list)}")
+  end
+end
+
+Main.run()
+```
+
