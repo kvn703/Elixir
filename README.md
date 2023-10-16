@@ -296,3 +296,8 @@ Aucune interface graphique n'est nécessaire, le programme peut être exécuté 
 Je vous invite fortement à utiliser les fonctions que vous avez créés dans les exercices précédents.
 
 A vous de jouer !
+
+# Authors
+
+| [<img src="https://github.com/kvn7.png?size=85" width=85><br><sub>Kevin Nadarajah</sub>](https://github.com/kvn7) | [<img src="https://github.com/REBELO-luc.png?size=85" width=85><br><sub>Luc Rebelo</sub>](https://github.com/REBELO-luc) |
+| :---: | :---: |
